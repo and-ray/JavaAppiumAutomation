@@ -75,7 +75,7 @@ public class FirstTest {
     }
 
     @Test
-    public void checkArticlesAppearAndDisappearTest() {
+    public void checkArticlesAppearAndDisappearInSearchResultTest() {
         waitForElementAndClick(
                 By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
                 "Cannot find 'Search Wikipedia' input",
