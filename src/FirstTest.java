@@ -482,7 +482,7 @@ public class FirstTest {
                 By.xpath("//*[contains(@text, 'SKIP')]"),
                 "SKIP is absent",
                 5);
-       //open and save first
+        //open and save first
         waitForElementAndClick(
                 By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
                 "Cannot find 'Search Wikipedia' input",
@@ -611,14 +611,42 @@ public class FirstTest {
                 5
         );
         Assert.assertEquals(
-                "article names are different: expected is'JavaScript', and real is '" + article_title+ "'",
+                "article names are different: expected is'JavaScript', and real is '" + article_title + "'",
                 "JavaScript",
                 article_title
         );
     }
 
+    @Test
+    public void openArticleCheckTitleTest() throws InterruptedException {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'SKIP')]"),
+                "SKIP is absent",
+                5);
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "Cannot find 'Search Wikipedia' input",
+                5);
 
-    private String waitForElementAndGetAttribute(By by, String attribute, String error_message, long timeout_in_seconds){
+        String search_line = "java";
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                search_line,
+                "Cannot find search input",
+                5
+        );
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_description'][@text='Object-oriented programming language']"),
+                "Cannot find 'Object-oriented programming language' topic searching by 'Java'",
+                15);
+        sleep(2000);
+        String search_result_locator = "//android.view.View/android.view.View[@text='Java (programming language)']";
+
+        assertElementPresent(By.xpath(search_result_locator),
+                "We haven't found some results by request '" + search_line + "'.");
+    }
+
+    private String waitForElementAndGetAttribute(By by, String attribute, String error_message, long timeout_in_seconds) {
         WebElement element = waitForElementPresent(by, error_message, timeout_in_seconds);
         return element.getAttribute(attribute);
     }
@@ -626,7 +654,15 @@ public class FirstTest {
     private void assertElementNotPresent(By by, String error_message) {
         int amount_of_elements = getAmountOfElements(by);
         if (amount_of_elements > 0) {
-            String default_message  = "An element '" + by.toString() + "' supposed to be not present";
+            String default_message = "An element '" + by.toString() + "' supposed to be not present. \n";
+            throw new AssertionError(default_message + " " + error_message);
+        }
+    }
+
+    private void assertElementPresent(By by, String error_message) {
+        int amount_of_elements = getAmountOfElements(by);
+        if (amount_of_elements < 1) {
+            String default_message = "An element '" + by.toString() + "' supposed to be present.\n ";
             throw new AssertionError(default_message + " " + error_message);
         }
     }

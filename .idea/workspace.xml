@@ -19,8 +19,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="599" selection-start-line="599" selection-end-line="599" />
+            <state relative-caret-position="480">
+              <caret line="641" column="18" selection-start-line="641" selection-start-column="18" selection-end-line="641" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#firstTest#0;class#FirstTest#0" />
@@ -31,12 +31,12 @@
                 <element signature="method#cancelSearchAndClearFieldTest#0;class#FirstTest#0" />
                 <element signature="method#compareArticleTitleTest#0;class#FirstTest#0" />
                 <element signature="method#swipeArticleTitleTest#0;class#FirstTest#0" />
+                <element signature="method#saveFirstArticleToMyListTest#0;class#FirstTest#0" />
                 <element signature="method#amountOfNotEmptySearchTest#0;class#FirstTest#0" />
                 <element signature="method#amountOfEmptySearchTest#0;class#FirstTest#0" />
-                <element signature="method#changeScreenOrientationOnSearchResultTest#0;class#FirstTest#0" />
                 <element signature="method#changeScreenOrientationOnSearchResultTest#1;class#FirstTest#0" />
+                <element signature="method#&lt;unnamed&gt;#0;class#FirstTest#0" />
                 <element signature="method#waitForElementAndGetAttribute#0;class#FirstTest#0" />
-                <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
                 <element signature="method#getAmountOfElements#0;class#FirstTest#0" />
                 <element signature="method#swipeElementToTheLeft#0;class#FirstTest#0" />
                 <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
@@ -52,6 +52,15 @@
                 <element signature="e#28528#28529#0" expanded="true" />
                 <element signature="method#swipeUpToFindElement#0;class#FirstTest#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -74,6 +83,9 @@
       <find>getAttribute</find>
       <find>page_list_item_title</find>
       <find>Assert</find>
+      <find>more</find>
+      <find />
+      <find>View</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,8 +107,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="657" />
-    <option name="y" value="188" />
+    <option name="x" value="647" />
+    <option name="y" value="125" />
     <option name="width" value="1796" />
     <option name="height" value="1348" />
   </component>
@@ -161,7 +173,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest">
+  <component name="RunManager" selected="JUnit.FirstTest.openArticleCheckTitleTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -172,23 +184,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="amountOfEmptySearchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="FirstTest.amountOfNotEmptySearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="amountOfNotEmptySearchTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -216,13 +211,30 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="FirstTest.saveFirstArticleToMyListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.openArticleCheckTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="saveFirstArticleToMyListTest" />
+      <option name="METHOD_NAME" value="openArticleCheckTitleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="FirstTest.openArticlesCheckTitleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="openArticlesCheckTitleTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -289,19 +301,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyListTest" />
-      <item itemvalue="JUnit.FirstTest.amountOfNotEmptySearchTest" />
       <item itemvalue="JUnit.FirstTest.amountOfEmptySearchTest" />
       <item itemvalue="JUnit.FirstTest.changeScreenOrientationOnSearchResultTest" />
       <item itemvalue="JUnit.FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" />
+      <item itemvalue="JUnit.FirstTest.openArticlesCheckTitleTest" />
+      <item itemvalue="JUnit.FirstTest.openArticleCheckTitleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.openArticleCheckTitleTest" />
+        <item itemvalue="JUnit.FirstTest.openArticlesCheckTitleTest" />
         <item itemvalue="JUnit.FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" />
         <item itemvalue="JUnit.FirstTest.changeScreenOrientationOnSearchResultTest" />
         <item itemvalue="JUnit.FirstTest.amountOfEmptySearchTest" />
-        <item itemvalue="JUnit.FirstTest.amountOfNotEmptySearchTest" />
-        <item itemvalue="JUnit.FirstTest.saveFirstArticleToMyListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -344,43 +356,58 @@
       <option name="project" value="LOCAL" />
       <updated>1586290831949</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="saveTwoArticlesDeleteOneCheckOtherTitleTest">
+      <created>1586896564516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586896564516</updated>
+    </task>
+    <task id="LOCAL-00006" summary="saveTwoArticlesDeleteOneCheckOtherTitleTest">
+      <created>1586897574940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586897574940</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_changeScreenOrientationOnSearchResultTest - 2020.04.14 at 22h 42m 10s.xml">
-      <configuration name="FirstTest.changeScreenOrientationOnSearchResultTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 29m 10s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_changeScreenOrientationOnSearchResultTest - 2020.04.14 at 22h 54m 51s.xml">
-      <configuration name="FirstTest.changeScreenOrientationOnSearchResultTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 36m 15s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_changeScreenOrientationOnSearchResultTest - 2020.04.14 at 22h 56m 57s.xml">
-      <configuration name="FirstTest.changeScreenOrientationOnSearchResultTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 38m 12s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 10m 36s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 38m 43s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 12m 41s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 39m 24s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 14m 15s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 42m 08s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 16m 42s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 42m 43s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 26m 58s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 43m 43s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 33m 16s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 44m 50s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesDeleteOneCheckOtherTitleTest - 2020.04.14 at 23h 35m 27s.xml">
-      <configuration name="FirstTest.saveTwoArticlesDeleteOneCheckOtherTitleTest" configurationId="JUnit" />
+    <history-entry file="FirstTest_openArticlesCheckTitleTest - 2020.04.15 at 00h 45m 46s.xml">
+      <configuration name="FirstTest.openArticlesCheckTitleTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="657" y="188" width="1796" height="1348" extended-state="0" />
+    <frame x="647" y="125" width="1796" height="1348" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -400,7 +427,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39170125" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4240664" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -417,7 +444,8 @@
     <MESSAGE value="checkIfSearchFieldPresentsTest" />
     <MESSAGE value="checkArticlesAppearAndDisappearInSearchResultTest" />
     <MESSAGE value="checkSearchWordInSearchResultsTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkSearchWordInSearchResultsTest" />
+    <MESSAGE value="saveTwoArticlesDeleteOneCheckOtherTitleTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="saveTwoArticlesDeleteOneCheckOtherTitleTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -441,24 +469,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/FirstTest.java</url>
-          <line>532</line>
+          <line>642</line>
           <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FirstTest.java</url>
-          <line>557</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/FirstTest.java</url>
-          <line>599</line>
-          <properties />
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="38" />
+      <option name="time" value="42" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -476,12 +492,12 @@
             <element signature="method#cancelSearchAndClearFieldTest#0;class#FirstTest#0" />
             <element signature="method#compareArticleTitleTest#0;class#FirstTest#0" />
             <element signature="method#swipeArticleTitleTest#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyListTest#0;class#FirstTest#0" />
             <element signature="method#amountOfNotEmptySearchTest#0;class#FirstTest#0" />
             <element signature="method#amountOfEmptySearchTest#0;class#FirstTest#0" />
-            <element signature="method#changeScreenOrientationOnSearchResultTest#0;class#FirstTest#0" />
             <element signature="method#changeScreenOrientationOnSearchResultTest#1;class#FirstTest#0" />
+            <element signature="method#&lt;unnamed&gt;#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndGetAttribute#0;class#FirstTest#0" />
-            <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#getAmountOfElements#0;class#FirstTest#0" />
             <element signature="method#swipeElementToTheLeft#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
@@ -514,12 +530,12 @@
             <element signature="method#cancelSearchAndClearFieldTest#0;class#FirstTest#0" />
             <element signature="method#compareArticleTitleTest#0;class#FirstTest#0" />
             <element signature="method#swipeArticleTitleTest#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyListTest#0;class#FirstTest#0" />
             <element signature="method#amountOfNotEmptySearchTest#0;class#FirstTest#0" />
             <element signature="method#amountOfEmptySearchTest#0;class#FirstTest#0" />
-            <element signature="method#changeScreenOrientationOnSearchResultTest#0;class#FirstTest#0" />
             <element signature="method#changeScreenOrientationOnSearchResultTest#1;class#FirstTest#0" />
+            <element signature="method#&lt;unnamed&gt;#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndGetAttribute#0;class#FirstTest#0" />
-            <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#getAmountOfElements#0;class#FirstTest#0" />
             <element signature="method#swipeElementToTheLeft#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
@@ -559,12 +575,12 @@
             <element signature="method#cancelSearchAndClearFieldTest#0;class#FirstTest#0" />
             <element signature="method#compareArticleTitleTest#0;class#FirstTest#0" />
             <element signature="method#swipeArticleTitleTest#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyListTest#0;class#FirstTest#0" />
             <element signature="method#amountOfNotEmptySearchTest#0;class#FirstTest#0" />
             <element signature="method#amountOfEmptySearchTest#0;class#FirstTest#0" />
-            <element signature="method#changeScreenOrientationOnSearchResultTest#0;class#FirstTest#0" />
             <element signature="method#changeScreenOrientationOnSearchResultTest#1;class#FirstTest#0" />
+            <element signature="method#&lt;unnamed&gt;#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndGetAttribute#0;class#FirstTest#0" />
-            <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#getAmountOfElements#0;class#FirstTest#0" />
             <element signature="method#swipeElementToTheLeft#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
@@ -600,12 +616,12 @@
             <element signature="method#cancelSearchAndClearFieldTest#0;class#FirstTest#0" />
             <element signature="method#compareArticleTitleTest#0;class#FirstTest#0" />
             <element signature="method#swipeArticleTitleTest#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyListTest#0;class#FirstTest#0" />
             <element signature="method#amountOfNotEmptySearchTest#0;class#FirstTest#0" />
             <element signature="method#amountOfEmptySearchTest#0;class#FirstTest#0" />
-            <element signature="method#changeScreenOrientationOnSearchResultTest#0;class#FirstTest#0" />
             <element signature="method#changeScreenOrientationOnSearchResultTest#1;class#FirstTest#0" />
+            <element signature="method#&lt;unnamed&gt;#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndGetAttribute#0;class#FirstTest#0" />
-            <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#getAmountOfElements#0;class#FirstTest#0" />
             <element signature="method#swipeElementToTheLeft#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
@@ -650,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="599" selection-start-line="599" selection-end-line="599" />
+        <state relative-caret-position="480">
+          <caret line="641" column="18" selection-start-line="641" selection-start-column="18" selection-end-line="641" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#firstTest#0;class#FirstTest#0" />
@@ -662,12 +678,12 @@
             <element signature="method#cancelSearchAndClearFieldTest#0;class#FirstTest#0" />
             <element signature="method#compareArticleTitleTest#0;class#FirstTest#0" />
             <element signature="method#swipeArticleTitleTest#0;class#FirstTest#0" />
+            <element signature="method#saveFirstArticleToMyListTest#0;class#FirstTest#0" />
             <element signature="method#amountOfNotEmptySearchTest#0;class#FirstTest#0" />
             <element signature="method#amountOfEmptySearchTest#0;class#FirstTest#0" />
-            <element signature="method#changeScreenOrientationOnSearchResultTest#0;class#FirstTest#0" />
             <element signature="method#changeScreenOrientationOnSearchResultTest#1;class#FirstTest#0" />
+            <element signature="method#&lt;unnamed&gt;#0;class#FirstTest#0" />
             <element signature="method#waitForElementAndGetAttribute#0;class#FirstTest#0" />
-            <element signature="method#assertElementNotPresent#0;class#FirstTest#0" />
             <element signature="method#getAmountOfElements#0;class#FirstTest#0" />
             <element signature="method#swipeElementToTheLeft#0;class#FirstTest#0" />
             <element signature="method#waitForElementPresent#0;class#FirstTest#0" />
