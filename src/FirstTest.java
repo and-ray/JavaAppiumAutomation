@@ -533,11 +533,13 @@ public class FirstTest {
         waitForElementAndClick(
                 By.xpath("//*[@content-desc='Navigate up']"),
                 "Cannot go back to search list",
-                5);
+                5
+        );
         waitForElementAndClick(
                 By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='JavaScript']"),
                 "Cannot find 'JavaScript",
-                15);
+                15
+        );
         waitForElementPresent(
                 By.id("pagelib_edit_section_title_description"),
                 "Cannot find article title",
@@ -597,10 +599,21 @@ public class FirstTest {
                 "Cannot delete saved article", 10
         );
         //check 2 exists
-        waitForElementPresent(
+        waitForElementAndClick(
                 By.xpath("//*[contains(@text, 'JavaScript')]"),
-                "Cannot find article title",
+                "Cannot find article",
                 15
+        );
+        String article_title = waitForElementAndGetAttribute(
+                By.xpath("//android.view.View[@resource-id='content']/android.view.View"),
+                "text",
+                "article title is absent",
+                5
+        );
+        Assert.assertEquals(
+                "article names are different: expected is'JavaScript', and real is '" + article_title+ "'",
+                "JavaScript",
+                article_title
         );
     }
 
