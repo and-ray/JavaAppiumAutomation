@@ -13,7 +13,10 @@ public class SearchPageObject extends MainPageObject {
             SEARCH_INPUT = "search_src_text",
             SEARCH_CANCEL_BUTTON = "org.wikipedia:id/search_close_btn",
             SEARCH_RESULT_BY_SUBSTRING_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_title'][@text='{SUBSTRING}']",
-            TITLE_BY_SUBSTRING_TPL = "//android.view.View/android.view.View[@text='{SUBSTRING}']",
+            SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_TPL =
+                    "//android.view.ViewGroup[./android.widget.TextView[@resource-id='org.wikipedia:id/page_list_item_title' and @text='{TITLE}']]" +
+                            "[./android.widget.TextView[@resource-id='org.wikipedia:id/page_list_item_description' and @text='{DESCRIPTION}']]",
+
             SEARCH_RESULT_ELEMENT_WITH_TITLE = "//*[@resource-id='org.wikipedia:id/search_results_list']/*/*[@resource-id='org.wikipedia:id/page_list_item_title']",
             SEARCH_EMPTY_RESULT_ELEMENT = "//*[@text='No results found']";
 
@@ -57,6 +60,13 @@ public class SearchPageObject extends MainPageObject {
         this.waitForElementPresent(
                 By.xpath(search_result_xpath),
                 "Cannot find search result with substring " + substring);
+    }
+
+    public void waitForElementByTitleAndDescription(String title, String description) {
+        String search_result_xpath = getResultSearchElementByTitleAndDescription(title, description);
+        this.waitForElementPresent(
+                By.xpath(search_result_xpath),
+                "Cannot find search result with title = " + title + ", description = " + description);
     }
 
     public void clickByArticleWithSubstring(String substring) {
@@ -137,6 +147,9 @@ public class SearchPageObject extends MainPageObject {
     /* TEMPLATES METHODS */
     private static String getResultSearchElement(String substring) {
         return SEARCH_RESULT_BY_SUBSTRING_TPL.replace("{SUBSTRING}", substring);
+    }
+    private static String getResultSearchElementByTitleAndDescription(String title, String descripition) {
+        return SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_TPL.replace("{TITLE}", title).replace("{DESCRIPTION}", descripition);
     }
     /* TEMPLATES METHODS */
 }
