@@ -59,7 +59,7 @@ public class ChangeAppConditionTests extends CoreTestCase {
         TouchAction action = new TouchAction(driver);
         Dimension size = driver.manage().window().getSize();
 
-        action.tap((int)(size.width * 0.2),(int)(size.height * 0.8) ).perform();
+       // action.tap((int)(size.width * 0.2),(int)(size.height * 0.8) ).perform();
 
         myListPageObject.waitForArticleToAppearByTitle("Java (programming language)");
     }

@@ -15,8 +15,7 @@ public class ArticleTests extends CoreTestCase {
 
         ArticlePageObject articlePageObject = new ArticlePageObject(driver);
         String articleTitle = articlePageObject.getArticleTitle();
-        assertEquals(
-                "We see unexpected title!",
+        assertEquals("We see unexpected title!",
                 "Java (programming language)",
                 articleTitle);
     }
