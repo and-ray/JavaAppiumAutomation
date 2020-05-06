@@ -24,7 +24,7 @@ public class iOSTestCase extends TestCase {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        /*DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "iOS");
         capabilities.setCapability("platformVersion", "13.3");
         capabilities.setCapability("deviceName", "iPhone SE");
@@ -38,7 +38,7 @@ public class iOSTestCase extends TestCase {
         WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.withMessage("SKIP is absent\n");
         WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(@text, 'SKIP')]")));
-        element.click();
+        element.click();*/
     }
 
     @Override
