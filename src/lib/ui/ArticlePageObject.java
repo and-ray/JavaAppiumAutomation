@@ -1,19 +1,21 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.By;
+import lib.Platform;
 import org.openqa.selenium.WebElement;
 
-public class ArticlePageObject extends MainPageObject {
+abstract public class ArticlePageObject extends MainPageObject {
 
-    private static final String
-            TITLE = "xpath://*[@resource-id='content']/android.view.View",
-            FOOTER_ELEMENT = "xpath://*[@text='View page in browser']",
-            ADD_TO_MY_LIST_OVERLAY = "xpath://*[@resource-id='org.wikipedia:id/onboarding_button'][@text='GOT IT']",
-            BUTTON_TO_CREATE_NEW_LIST = "xpath://*[contains(@text, 'Create new')]",
-            MY_LIST_NAME_INPUT = "id:org.wikipedia:id/text_input",
-            MY_LIST_OK_BUTTON = "xpath://*[@text='OK']",
-            MY_FOLDER_FIELD_TPL = "xpath://*[contains(@text, '{ARTICLE_TITLE}')]";
+    protected static String
+            TITLE,
+            FOOTER_ELEMENT,
+            ADD_TO_MY_LIST_OVERLAY,
+            BUTTON_TO_CREATE_NEW_LIST,
+            MY_LIST_NAME_INPUT,
+            MY_LIST_OK_BUTTON,
+            MY_FOLDER_FIELD_TPL,
+            OPTIONS_ADD_TO_MY_LIST_BUTTON, //todo этот элемент нужен мне?
+            CLOSE_ARTICE_BUTTON; //todo этот элемент нужен мне?
 
     public ArticlePageObject(AppiumDriver driver) {
         super(driver);
@@ -28,14 +30,24 @@ public class ArticlePageObject extends MainPageObject {
 
     public String getArticleTitle() {
         WebElement titleElement = waitForTitleElement();
-        return titleElement.getAttribute("text");
+        if (Platform.getInstance().isAndroid()) {
+            return titleElement.getAttribute("text");
+        } else {
+            return titleElement.getAttribute("name");
+        }
     }
 
     public void swipeUpToFooter() {
-        this.swipeUpToFindElement(
+        if (Platform.getInstance().isAndroid()) {
+            this.swipeUpToFindElement(
+                    FOOTER_ELEMENT,
+                    "Cannot find the end of the article",
+                    40
+            );
+        } else swipeUpTillElementAppears(
                 FOOTER_ELEMENT,
                 "Cannot find the end of the article",
-                20
+                40
         );
     }
 
@@ -59,7 +71,14 @@ public class ArticlePageObject extends MainPageObject {
                 5);
     }
 
-    public void waitForArticleByTitlePresent(String name_of_article){
+    public void addArticlesToMySaved(){
+        waitForElementAndClick(OPTIONS_ADD_TO_MY_LIST_BUTTON,
+                "Cannot find option to add article to reading list",
+                5
+                );
+    }
+
+    public void waitForArticleByTitlePresent(String name_of_article) {
         String articleXpath = getArticleXpathByName(name_of_article);
         waitForElementPresent(
                 articleXpath,

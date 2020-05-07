@@ -1,14 +1,14 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.By;
+import lib.Platform;
 
-public class MyListPageObject extends MainPageObject {
+abstract public class MyListPageObject extends MainPageObject {
 
-    private static final String
-            BUTTON_TO_OPEN_BOOKMARK_OPTIONS = "id:org.wikipedia:id/article_menu_bookmark",
-            FOLDER_BY_NAME_TPL = "xpath://*[contains(@text, '{FOLDER_NAME}')]",
-            ARTICLE_BY_NAME_TPL = "xpath://*[contains(@text, '{ARTICLE_NAME}')]";
+    protected static String
+            BUTTON_TO_OPEN_BOOKMARK_OPTIONS,
+            FOLDER_BY_NAME_TPL,
+            ARTICLE_BY_NAME_TPL;
 
     public MyListPageObject(AppiumDriver driver) {
         super(driver);
@@ -28,8 +28,12 @@ public class MyListPageObject extends MainPageObject {
         String article_title_xpath = getSavedArticleXpathByTitle(article_title);
         this.swipeElementToTheLeft(
                 article_title_xpath,
-                "Cannot find saved article with title "+ article_title
+                "Cannot find saved article with title " + article_title
         );
+        if (Platform.getInstance().isIOS()){
+            clickElementByTheRightUpperCorner(article_title_xpath,
+                    "Cannot find saved article ");
+        }
         this.waitForArticleToDisappearByTitle(article_title);
     }
 
@@ -55,6 +59,7 @@ public class MyListPageObject extends MainPageObject {
                 "Cannot find button to open bookmark options",
                 5);
     }
+
     public void addArticleToExistingReadingList(String name_of_reading_list) {
         openBookmarks();
         openFolderByName(name_of_reading_list);
@@ -65,6 +70,7 @@ public class MyListPageObject extends MainPageObject {
     public String getFolderXpathByName(String name_of_folder) {
         return FOLDER_BY_NAME_TPL.replace("{FOLDER_NAME}", name_of_folder);
     }
+
     public String getSavedArticleXpathByTitle(String article_title) {
         return ARTICLE_BY_NAME_TPL.replace("{ARTICLE_NAME}", article_title);
     }

@@ -2,6 +2,7 @@ package tests;
 
 import lib.CoreTestCase;
 import lib.ui.SearchPageObject;
+import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 
@@ -10,7 +11,7 @@ import java.util.List;
 public class SearchTests extends CoreTestCase {
     @Test
     public void testSearch() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         searchPageObject.typeSearchLine("Java");
         searchPageObject.waitForSearchResult("Java (programming language)");
@@ -18,7 +19,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testCancelSearch() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         searchPageObject.typeSearchLine("Java");
         searchPageObject.waitForCancelButtonToAppear();
@@ -28,7 +29,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testAmountOfNotEmptySearch() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         String search_line = "Linkin Park discography";
         searchPageObject.typeSearchLine(search_line);
@@ -38,7 +39,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testAmountOfEmptySearch() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         String search_line = "flgkjdflkgjd flgkjdflkgj dflkgjdlkfg";
         searchPageObject.typeSearchLine(search_line);
@@ -48,7 +49,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testCheckIfSearchFieldPresents() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         String searchFieldTitle = searchPageObject.getSearchFieldText();
         assertEquals("We see unexpected title!", "Search Wikipedia", searchFieldTitle);
@@ -57,7 +58,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testCheckArticlesAppearAndDisappearInSearchResult() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         searchPageObject.typeSearchLine("Java");
         int resultOfArticle = searchPageObject.countElementsPresentOnSearchPage();
@@ -70,7 +71,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testCheckSearchWordInSearchResults() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         String search_word = "java";
         searchPageObject.typeSearchLine(search_word);
@@ -87,7 +88,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testCheckTitleAndDescriptionInSearchResults() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         String search_word = "java";
         searchPageObject.typeSearchLine(search_word);
@@ -98,7 +99,7 @@ public class SearchTests extends CoreTestCase {
 
     @Test
     public void testCancelSearchAndClearField() {
-        SearchPageObject searchPageObject = new SearchPageObject(driver);
+        SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         searchPageObject.typeSearchLine("appium");
         searchPageObject.waitForCancelButtonToAppear();

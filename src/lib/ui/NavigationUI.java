@@ -1,19 +1,18 @@
 package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
-import org.openqa.selenium.By;
 
-public class NavigationUI extends MainPageObject {
+abstract public class NavigationUI extends MainPageObject {
 
     public NavigationUI(AppiumDriver driver) {
         super(driver);
     }
 
-    private static final String
-            BUTTON_TO_OPEN_OPTIONS = "xpath://*[@resource-id='org.wikipedia:id/page_action_overflow_reading_lists'][contains(@text, 'My lists')]",
-            NO_THANKS_BUTTON = "xpath://*[contains(@text, 'NO THANKS')]",
-            OPTIONS_BUTTON = "xpath://android.widget.ImageView[@content-desc='More options']",
-            NAVIGATE_BACK = "xpath://*[@content-desc='Navigate up']";
+    protected static String
+            BUTTON_TO_OPEN_OPTIONS,
+            NO_THANKS_BUTTON,
+            OPTIONS_BUTTON,
+            NAVIGATE_BACK;
 
 
     public void openMyLists() {
