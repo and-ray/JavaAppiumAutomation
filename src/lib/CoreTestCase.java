@@ -38,9 +38,7 @@ public class CoreTestCase extends TestCase {
     }
 
     private void skipWelcomePageForIOS(){
-        if (Platform.getInstance().isIOS()){ //todo check on Android
             WelcomePageObject welcomePageObject = new WelcomePageObject(driver);
             welcomePageObject.clickSkip();
-        }
     }
 }

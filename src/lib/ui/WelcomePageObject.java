@@ -11,7 +11,7 @@ public class WelcomePageObject extends MainPageObject {
             STEP_LEARN_MORE_ABOUT_DATA_COLLECTED_LINK = "id:Learn more about data collected",
             GET_STARTED_BUTTON = "id:Get started",
             NEXT_BUTTON = "id:Next",
-            SKIP_BUTTON = "id:Skip";
+            SKIP_BUTTON = "xpath://*[@text='SKIP']";
 
     public WelcomePageObject(AppiumDriver driver) {
         super(driver);

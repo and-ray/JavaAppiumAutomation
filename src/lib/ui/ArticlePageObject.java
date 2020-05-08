@@ -42,7 +42,7 @@ abstract public class ArticlePageObject extends MainPageObject {
             this.swipeUpToFindElement(
                     FOOTER_ELEMENT,
                     "Cannot find the end of the article",
-                    40
+                    100
             );
         } else swipeUpTillElementAppears(
                 FOOTER_ELEMENT,

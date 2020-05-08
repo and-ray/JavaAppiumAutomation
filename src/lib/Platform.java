@@ -27,7 +27,7 @@ public class Platform {
     public AppiumDriver getDriver() throws Exception {
         URL URL = new URL(APPIUM_URL);
         if (isAndroid()) {
-            return new AndroidDriver(URL, getIOSDesiredCapabilities());
+            return new AndroidDriver(URL, getAndroidDesiredCapabilities());
         } else if (isIOS()) {
             return new IOSDriver(URL, getIOSDesiredCapabilities());
         } else {
@@ -52,7 +52,7 @@ public class Platform {
         capabilities.setCapability("automationName", "Appium");
         capabilities.setCapability("appPackage", "org.wikipedia");
         capabilities.setCapability("appActivity", ".main.MainActivity");
-        capabilities.setCapability("app", "E:\\And-Ray\\it\\mobile\\JavaAppiumAutomation\\apks\\org.wikipedia.apk");
+        capabilities.setCapability("app", "E:\\And-Ray\\it\\mobile\\JavaAppiumAutomation2\\apks\\org.wikipedia.apk");
         return capabilities;
     }
 
