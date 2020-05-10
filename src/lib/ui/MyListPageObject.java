@@ -8,7 +8,9 @@ abstract public class MyListPageObject extends MainPageObject {
     protected static String
             BUTTON_TO_OPEN_BOOKMARK_OPTIONS,
             FOLDER_BY_NAME_TPL,
-            ARTICLE_BY_NAME_TPL;
+            ARTICLE_BY_NAME_TPL,
+            BUTTON_TO_OPEN_SAVED_ARTICLES,
+            CLOSE_OVERLAY;
 
     public MyListPageObject(AppiumDriver driver) {
         super(driver);
@@ -60,9 +62,20 @@ abstract public class MyListPageObject extends MainPageObject {
                 5);
     }
 
+    public void openSavedArticles() {
+        this.waitForElementAndClick(
+                BUTTON_TO_OPEN_SAVED_ARTICLES,
+                "Cannot find button to open saved articles",
+                5);
+    }
+
     public void addArticleToExistingReadingList(String name_of_reading_list) {
         openBookmarks();
         openFolderByName(name_of_reading_list);
+    }
+
+    public void closeOverlay(){
+        waitForElementAndClick(CLOSE_OVERLAY, "overlay not found", 15);
     }
 
     /* TEMPLATES METHODS */

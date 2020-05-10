@@ -14,8 +14,8 @@ abstract public class ArticlePageObject extends MainPageObject {
             MY_LIST_NAME_INPUT,
             MY_LIST_OK_BUTTON,
             MY_FOLDER_FIELD_TPL,
-            OPTIONS_ADD_TO_MY_LIST_BUTTON, //todo этот элемент нужен мне?
-            CLOSE_ARTICE_BUTTON; //todo этот элемент нужен мне?
+            OPTIONS_ADD_TO_MY_LIST_BUTTON,
+            CLOSE_ARTICLE_BUTTON;
 
     public ArticlePageObject(AppiumDriver driver) {
         super(driver);
@@ -76,6 +76,13 @@ abstract public class ArticlePageObject extends MainPageObject {
                 "Cannot find option to add article to reading list",
                 5
                 );
+    }
+
+    public void closeArticle(){
+        waitForElementAndClick(CLOSE_ARTICLE_BUTTON,
+                "Cannot find button to close article",
+                5
+        );
     }
 
     public void waitForArticleByTitlePresent(String name_of_article) {

@@ -28,16 +28,22 @@ public class MyListsTest extends CoreTestCase {
         String articleTitle = articlePageObject.getArticleTitle();
         NavigationUI navigationUI = NavigationUIFactory.get(driver);
         MyListPageObject myListPageObject = MyListPageObjectFactory.get(driver);
-        myListPageObject.openBookmarks();
+
         if (Platform.getInstance().isAndroid()) {
+            myListPageObject.openBookmarks();
             articlePageObject.addArticleToNewList(name_of_reading_list);
         } else {
             articlePageObject.addArticlesToMySaved();
+            articlePageObject.closeArticle();
+            searchPageObject.clickCancelSearch();
+            myListPageObject.openSavedArticles();
+            myListPageObject.closeOverlay();
         }
-        navigationUI.openMyLists();
+
         if (Platform.getInstance().isAndroid()) {
-        myListPageObject.openFolderByName(name_of_reading_list);
-        myListPageObject.waitForArticleToAppearByTitle(name_of_reading_list);
+            navigationUI.openMyLists();
+            myListPageObject.openFolderByName(name_of_reading_list);
+            myListPageObject.waitForArticleToAppearByTitle(name_of_reading_list);
         }
         myListPageObject.swipeByArticleToDelete(articleTitle);
     }
@@ -54,20 +60,31 @@ public class MyListsTest extends CoreTestCase {
         articlePageObject.waitForTitleElement();
         NavigationUI navigationUI = NavigationUIFactory.get(driver);
         MyListPageObject myListPageObject = MyListPageObjectFactory.get(driver);
-        myListPageObject.openBookmarks();
-        articlePageObject.addArticleToNewList(name_of_reading_list);
-        navigationUI.moveBack();
+        if (Platform.getInstance().isAndroid()) {
+            myListPageObject.openBookmarks();
+            articlePageObject.addArticleToNewList(name_of_reading_list);
+            navigationUI.moveBack();
+        } else {
+            articlePageObject.addArticlesToMySaved();
+            articlePageObject.closeArticle();
+        }
         searchPageObject.clickByArticleWithSubstring("JavaScript");
-        articlePageObject.waitForTitleElement();
-        myListPageObject.addArticleToExistingReadingList(name_of_reading_list);
 
-        navigationUI.openMyLists();
-        myListPageObject.openFolderByName(name_of_reading_list);
-
-        //check both exist
-        articlePageObject.waitForArticleByTitlePresent("JavaScript");
-        articlePageObject.waitForArticleByTitlePresent("Java (programming language)");
-
+        if (Platform.getInstance().isAndroid()) {
+            myListPageObject.openBookmarks();
+            articlePageObject.addArticleToNewList(name_of_reading_list);
+            //navigationUI.openMyLists();
+            myListPageObject.openFolderByName(name_of_reading_list);
+            //check both exist
+            articlePageObject.waitForArticleByTitlePresent("JavaScript");
+            articlePageObject.waitForArticleByTitlePresent("Java (programming language)");
+        } else {
+            articlePageObject.addArticlesToMySaved();
+            articlePageObject.closeArticle();
+            searchPageObject.clickCancelSearch();
+            myListPageObject.openSavedArticles();
+            myListPageObject.closeOverlay();
+        }
         myListPageObject.swipeByArticleToDelete("Java (programming language)");
         myListPageObject.waitForArticleToDisappearByTitle("Java (programming language)");
         myListPageObject.waitForArticleToAppearByTitle("JavaScript");

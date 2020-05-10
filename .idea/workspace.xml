@@ -19,18 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="789c1e6b-adb3-47a8-aa0a-d036e7883f8d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidWelcomePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/WelcomePageObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSWelcomePageObject.java" afterDir="false" />
+    <list default="true" id="789c1e6b-adb3-47a8-aa0a-d036e7883f8d" name="Default Changelist" comment="article tests for iOS R ready.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ios/IOSMyListPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSMyListPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/ios/IOSSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSSearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/GetStartedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GetStartedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/MyListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyListsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +69,7 @@
     <property name="project.structure.side.proportion" value="0.26091954" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="JUnit.ArticleTests.testSwipeArticle">
+  <component name="RunManager" selected="JUnit.MyListsTest.testSaveTwoArticlesDeleteOneCheckOtherTitle">
     <configuration name="ArticleTests.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <useClassPathOnly />
@@ -120,6 +116,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyListsTest.testSaveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTest" />
+      <option name="METHOD_NAME" value="testSaveFirstArticleToMyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <envs>
+        <env name="PLATFORM" value="ios" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListsTest.testSaveTwoArticlesDeleteOneCheckOtherTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTest" />
+      <option name="METHOD_NAME" value="testSaveTwoArticlesDeleteOneCheckOtherTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <envs>
+        <env name="PLATFORM" value="ios" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -137,9 +179,13 @@
     <list>
       <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
       <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
+      <item itemvalue="JUnit.MyListsTest.testSaveFirstArticleToMyList" />
+      <item itemvalue="JUnit.MyListsTest.testSaveTwoArticlesDeleteOneCheckOtherTitle" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyListsTest.testSaveTwoArticlesDeleteOneCheckOtherTitle" />
+        <item itemvalue="JUnit.MyListsTest.testSaveFirstArticleToMyList" />
         <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
         <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
       </list>
@@ -184,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588782032554</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="article tests for iOS R ready.">
+      <created>1589133764842</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589133764842</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,13 +248,14 @@
     <MESSAGE value="testGetClassString added" />
     <MESSAGE value="testPassThroughWelcome added" />
     <MESSAGE value="Platform capabilities added, all selectors changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Platform capabilities added, all selectors changed" />
+    <MESSAGE value="article tests for iOS R ready." />
+    <option name="LAST_COMMIT_MESSAGE" value="article tests for iOS R ready." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589131451174">
+    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589137212514">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1589131451174" />
+    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1589137212514" />
     <state x="189" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1588773216001" />
     <state x="550" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1589129076900">
       <screen x="0" y="23" width="1920" height="977" />
@@ -227,62 +281,63 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="327" y="163" width="735" height="513" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1588779195918" />
-    <state width="1432" height="317" key="GridCell.Tab.0.bottom" timestamp="1589133090546">
+    <state width="1432" height="273" key="GridCell.Tab.0.bottom" timestamp="1589138504875">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1589133090546" />
+    <state width="1432" height="273" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1589138504875" />
     <state width="1250" height="83" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588794638314" />
-    <state width="1432" height="317" key="GridCell.Tab.0.center" timestamp="1589133090545">
+    <state width="1432" height="273" key="GridCell.Tab.0.center" timestamp="1589138504875">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1589133090545" />
+    <state width="1432" height="273" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1589138504875" />
     <state width="1250" height="83" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1588794638313" />
-    <state width="1432" height="317" key="GridCell.Tab.0.left" timestamp="1589133090545">
+    <state width="1432" height="273" key="GridCell.Tab.0.left" timestamp="1589138504874">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1589133090545" />
+    <state width="1432" height="273" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1589138504874" />
     <state width="1250" height="83" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1588794638312" />
-    <state width="1432" height="317" key="GridCell.Tab.0.right" timestamp="1589133090546">
+    <state width="1432" height="273" key="GridCell.Tab.0.right" timestamp="1589138504875">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1589133090546" />
+    <state width="1432" height="273" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1589138504875" />
     <state width="1250" height="83" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588794638313" />
-    <state width="1432" height="317" key="GridCell.Tab.1.bottom" timestamp="1589133088995">
+    <state width="1432" height="273" key="GridCell.Tab.1.bottom" timestamp="1589138462194">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1589133088995" />
+    <state width="1432" height="273" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1589138462194" />
     <state width="1250" height="83" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588794638315" />
-    <state width="1432" height="317" key="GridCell.Tab.1.center" timestamp="1589133088994">
+    <state width="1432" height="273" key="GridCell.Tab.1.center" timestamp="1589138462193">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1589133088994" />
+    <state width="1432" height="273" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1589138462193" />
     <state width="1250" height="83" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1588794638314" />
-    <state width="1432" height="317" key="GridCell.Tab.1.left" timestamp="1589133088993">
+    <state width="1432" height="273" key="GridCell.Tab.1.left" timestamp="1589138462193">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1589133088993" />
+    <state width="1432" height="273" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1589138462193" />
     <state width="1250" height="83" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1588794638314" />
-    <state width="1432" height="317" key="GridCell.Tab.1.right" timestamp="1589133088995">
+    <state width="1432" height="273" key="GridCell.Tab.1.right" timestamp="1589138462193">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1432" height="317" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1589133088995" />
+    <state width="1432" height="273" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1589138462193" />
     <state width="1250" height="83" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1588794638315" />
     <state x="188" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1588771050696">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="188" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1588771050696" />
-    <state x="278" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1588782034332">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="391" y="161" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1589133767057">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="391" y="161" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1589133767057" />
     <state x="278" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1588782034332" />
     <state x="355" y="290" width="646" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585662930147">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="355" y="290" width="646" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1366.741@0.27.1366.741" timestamp="1585662930147" />
-    <state x="0" y="23" width="869" height="977" key="find.popup" timestamp="1589132852129">
+    <state x="68" y="23" width="1332" height="977" key="find.popup" timestamp="1589138656016">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state x="0" y="23" width="869" height="977" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1589132852129" />
+    <state x="68" y="23" width="1332" height="977" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1589138656016" />
     <state x="0" y="27" width="618" height="741" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1588793248213" />
     <state x="315" y="185" width="735" height="423" key="git4idea.merge.GitPullDialog" timestamp="1588757156386">
       <screen x="0" y="27" width="1366" height="741" />
@@ -306,14 +361,14 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/ArticleTests.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java</url>
           <line>193</line>
           <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/MyListsTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

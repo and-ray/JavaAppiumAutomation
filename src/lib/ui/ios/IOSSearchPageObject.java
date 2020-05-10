@@ -8,7 +8,7 @@ public class IOSSearchPageObject extends SearchPageObject {
 
         SEARCH_INIT_ELEMENT = "xpath://*[@name='Search Wikipedia']";
         SEARCH_INPUT = "xpath://*[@name='Search Wikipedia']";
-        SEARCH_CANCEL_BUTTON = "id:Cancel";//todo check
+        SEARCH_CANCEL_BUTTON = "id:Cancel";
         SEARCH_RESULT_BY_SUBSTRING_TPL =
                 "xpath://*[contains(@name,'{SUBSTRING}')]";//todo
         SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_TPL =
