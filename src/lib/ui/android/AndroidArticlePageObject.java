@@ -15,6 +15,6 @@ public class AndroidArticlePageObject extends ArticlePageObject {
         BUTTON_TO_CREATE_NEW_LIST = "xpath://*[contains(@text, 'Create new')]";
         MY_LIST_NAME_INPUT = "id:org.wikipedia:id/text_input";
         MY_LIST_OK_BUTTON = "xpath://*[@text='OK']";
-        MY_FOLDER_FIELD_TPL = "xpath://*[contains(@text, '{ARTICLE_TITLE}')]";
+        MY_ARTICLE_TPL = "xpath://*[contains(@text, '{ARTICLE_DATA}')]";
     }
 }

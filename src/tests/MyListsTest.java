@@ -84,6 +84,8 @@ public class MyListsTest extends CoreTestCase {
             searchPageObject.clickCancelSearch();
             myListPageObject.openSavedArticles();
             myListPageObject.closeOverlay();
+            //articlePageObject.waitForArticleByNamePresent("Java (programmin...");
+            articlePageObject.waitForArticleByNamePresent("JavaScript High-level programming language");
         }
         myListPageObject.swipeByArticleToDelete("Java (programming language)");
         myListPageObject.waitForArticleToDisappearByTitle("Java (programming language)");

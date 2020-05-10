@@ -13,7 +13,7 @@ abstract public class ArticlePageObject extends MainPageObject {
             BUTTON_TO_CREATE_NEW_LIST,
             MY_LIST_NAME_INPUT,
             MY_LIST_OK_BUTTON,
-            MY_FOLDER_FIELD_TPL,
+            MY_ARTICLE_TPL,
             OPTIONS_ADD_TO_MY_LIST_BUTTON,
             CLOSE_ARTICLE_BUTTON;
 
@@ -94,10 +94,19 @@ abstract public class ArticlePageObject extends MainPageObject {
         );
     }
 
+    public void waitForArticleByNamePresent(String data) {
+        String articleXpath = getArticleXpathByName(data);
+        waitForElementPresent(
+                articleXpath,
+                "Cannot find article by data = " + data,
+                15
+        );
+    }
     /* TEMPLATES METHODS */
 
-    public String getArticleXpathByName(String name_of_article) {
-        return MY_FOLDER_FIELD_TPL.replace("{ARTICLE_TITLE}", name_of_article);
+    public String getArticleXpathByName(String data) {
+        String result = MY_ARTICLE_TPL.replace("{ARTICLE_DATA}", data);
+        return result;
     }
     /* TEMPLATES METHODS */
 
