@@ -11,7 +11,7 @@ public class IOSArticlePageObject extends ArticlePageObject {
 
     static {
         TITLE = "id:Java (programming language)";
-        FOOTER_ELEMENT = "id:View page in browser";
+        FOOTER_ELEMENT = "id:View article in browser";
         OPTIONS_ADD_TO_MY_LIST_BUTTON = "id:Save for later"; //todo
         CLOSE_ARTICE_BUTTON = "id:Back"; //todo
         /*ADD_TO_MY_LIST_OVERLAY = "xpath://*[@resource-id='org.wikipedia:id/onboarding_button'][@text='GOT IT']";

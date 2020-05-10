@@ -175,9 +175,7 @@ public class MainPageObject {
 
     public void swipeUpTillElementAppears(String locator, String error_message, int max_swipes) {
         int already_swiped = 0;
-        By by = getLocatorByString(locator);
-        while (isElementLocatedOnTheScreen(locator)) {
-
+        while (!isElementLocatedOnTheScreen(locator)) {
             if (already_swiped > max_swipes) {
                 Assert.assertTrue(error_message, isElementLocatedOnTheScreen(locator));
                 return;
@@ -191,7 +189,8 @@ public class MainPageObject {
         int element_location_by_y =
                 waitForElementPresent(locator, "Cannot find element by locator", 1).getLocation().getY();
         int screen_size_by_y = driver.manage().window().getSize().getHeight();
-        return element_location_by_y < screen_size_by_y;
+        boolean result =  element_location_by_y < screen_size_by_y;
+        return result;
     }
 
     private By getLocatorByString(String locator_with_type) {

@@ -2,16 +2,16 @@ package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
 
-public class WelcomePageObject extends MainPageObject {
+abstract public class WelcomePageObject extends MainPageObject {
 
-    private static final String
+    protected static String
             STEP_LEARN_MORE_LINK = "id:Learn more about Wikipedia",
             STEP_NEW_WAYS_TO_EXPLORE_TEXT = "id:New ways to explore",
             STEP_ADD_OR_EDIT_PREFERRED_LINK = "id:Add or edit preferred languages",
             STEP_LEARN_MORE_ABOUT_DATA_COLLECTED_LINK = "id:Learn more about data collected",
             GET_STARTED_BUTTON = "id:Get started",
             NEXT_BUTTON = "id:Next",
-            SKIP_BUTTON = "xpath://*[@text='SKIP']";
+            SKIP_BUTTON;
 
     public WelcomePageObject(AppiumDriver driver) {
         super(driver);
@@ -25,7 +25,7 @@ public class WelcomePageObject extends MainPageObject {
         this.waitForElementPresent(STEP_NEW_WAYS_TO_EXPLORE_TEXT, "Cannot find 'New ways to explore' link", 10);
     }
 
-    public void waitForAddOrEditPrefferedLangText() {
+    public void waitForAddOrEditPreferredLangText() {
         this.waitForElementPresent(STEP_ADD_OR_EDIT_PREFERRED_LINK, "Cannot find 'Add or edit preferred languages' link", 10);
     }
 

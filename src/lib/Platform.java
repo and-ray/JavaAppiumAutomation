@@ -14,9 +14,6 @@ public class Platform {
 
     private static Platform instance;
 
-    private Platform(){    } // синтаксис синглтона??
-
-
     public static Platform getInstance(){
         if (instance == null){
             instance = new Platform();
@@ -40,6 +37,7 @@ public class Platform {
     }
 
     public boolean isIOS() {
+
         return isPlatform(PLATFORM_IOS);
     }
 

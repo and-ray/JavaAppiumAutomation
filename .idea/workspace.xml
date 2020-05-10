@@ -1,61 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="789c1e6b-adb3-47a8-aa0a-d036e7883f8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/android/AndroidWelcomePageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/factories/WelcomePageObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSWelcomePageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Platform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ArticleTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ArticleTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ios/IOSSearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSSearchPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/GetStartedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GetStartedTest.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ArticleTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tests/ArticleTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticlePageObject.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidArticlePageObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/ui/android/AndroidArticlePageObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Platform.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/Platform.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,18 +47,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/lib/Platform.java" />
-        <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java" />
-        <option value="$PROJECT_DIR$/src/tests/ArticleTests.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/android/AndroidArticlePageObject.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="663" />
     <option name="y" value="20" />
@@ -87,50 +55,6 @@
   </component>
   <component name="ProjectId" id="1Ztdf9IGb0SI2a6PmHxlVZwytsH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavaAppiumAutomation2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAppiumAutomation2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAppiumAutomation2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAppiumAutomation2" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAppiumAutomation2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAppiumAutomation2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAppiumAutomation2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAppiumAutomation2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAppiumAutomation2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAppiumAutomation2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -149,185 +73,75 @@
     <property name="project.structure.side.proportion" value="0.26091954" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="JUnit.ArticleTests.testSwipeArticle">
-    <configuration name="ArticleTests.testSwipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArticleTests.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
+      <option name="METHOD_NAME" value="testCompareArticleTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <envs>
+        <env name="PLATFORM" value="ios" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArticleTests.testSwipeArticle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
       <option name="METHOD_NAME" value="testSwipeArticle" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <option name="WORKING_DIRECTORY" value="" />
       <envs>
-        <env name="PLATFORM" value="android" />
+        <env name="PLATFORM" value="ios" />
       </envs>
-      <patterns />
-    </configuration>
-    <configuration name="ChangeAppConditionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ChangeAppConditionTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <patterns />
-    </configuration>
-    <configuration name="GetStartedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GetStartedTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <patterns />
-    </configuration>
-    <configuration name="MyListsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MyListsTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <patterns />
-    </configuration>
-    <configuration name="SearchTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SearchTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
       <envs>
         <env name="PLATFORM" value="android" />
       </envs>
-      <patterns />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ChangeAppConditionTests" />
-      <item itemvalue="JUnit.GetStartedTest" />
-      <item itemvalue="JUnit.MyListsTest" />
-      <item itemvalue="JUnit.SearchTests" />
+      <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
       <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ArticleTests.testSwipeArticle" />
-        <item itemvalue="JUnit.SearchTests" />
-        <item itemvalue="JUnit.MyListsTest" />
-        <item itemvalue="JUnit.GetStartedTest" />
-        <item itemvalue="JUnit.ChangeAppConditionTests" />
+        <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -373,72 +187,8 @@
     <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="GetStartedTest - 2020.05.08 at 21h 40m 00s.xml">
-      <configuration name="GetStartedTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyListsTest - 2020.05.08 at 21h 42m 38s.xml">
-      <configuration name="MyListsTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SearchTests - 2020.05.08 at 21h 46m 43s.xml">
-      <configuration name="SearchTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 21h 48m 18s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 21h 49m 18s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 21h 52m 26s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 21h 54m 18s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 21h 56m 47s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 22h 01m 21s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ArticleTests_testSwipeArticle - 2020.05.08 at 22h 05m 35s.xml">
-      <configuration name="ArticleTests.testSwipeArticle" configurationId="JUnit" />
-    </history-entry>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="663" y="20" width="1897" height="1303" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3922414" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34060672" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.46293104" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="getClassNumberTest added" />
@@ -448,10 +198,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="Platform capabilities added, all selectors changed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="189" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588773216001">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589131451174">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.977@0.23.1920.977" timestamp="1589131451174" />
     <state x="189" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1588773216001" />
+    <state x="550" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1589129076900">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="550" y="225" key="#com.intellij.ide.util.MemberChooser/0.23.1920.977@0.23.1920.977" timestamp="1589129076900" />
     <state x="832" y="266" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585667681015">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -472,37 +227,45 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="327" y="163" width="735" height="513" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1588779195918" />
-    <state width="1250" height="83" key="GridCell.Tab.0.bottom" timestamp="1588794638314">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.0.bottom" timestamp="1589133090546">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1589133090546" />
     <state width="1250" height="83" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588794638314" />
-    <state width="1250" height="83" key="GridCell.Tab.0.center" timestamp="1588794638313">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.0.center" timestamp="1589133090545">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1589133090545" />
     <state width="1250" height="83" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1588794638313" />
-    <state width="1250" height="83" key="GridCell.Tab.0.left" timestamp="1588794638312">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.0.left" timestamp="1589133090545">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1589133090545" />
     <state width="1250" height="83" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1588794638312" />
-    <state width="1250" height="83" key="GridCell.Tab.0.right" timestamp="1588794638313">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.0.right" timestamp="1589133090546">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1589133090546" />
     <state width="1250" height="83" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1588794638313" />
-    <state width="1250" height="83" key="GridCell.Tab.1.bottom" timestamp="1588794638315">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.1.bottom" timestamp="1589133088995">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1589133088995" />
     <state width="1250" height="83" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1588794638315" />
-    <state width="1250" height="83" key="GridCell.Tab.1.center" timestamp="1588794638314">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.1.center" timestamp="1589133088994">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1589133088994" />
     <state width="1250" height="83" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1588794638314" />
-    <state width="1250" height="83" key="GridCell.Tab.1.left" timestamp="1588794638314">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.1.left" timestamp="1589133088993">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1589133088993" />
     <state width="1250" height="83" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1588794638314" />
-    <state width="1250" height="83" key="GridCell.Tab.1.right" timestamp="1588794638315">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1432" height="317" key="GridCell.Tab.1.right" timestamp="1589133088995">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state width="1432" height="317" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1589133088995" />
     <state width="1250" height="83" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1588794638315" />
     <state x="188" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1588771050696">
       <screen x="0" y="27" width="1366" height="741" />
@@ -516,9 +279,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="355" y="290" width="646" height="213" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1366.741@0.27.1366.741" timestamp="1585662930147" />
-    <state x="0" y="27" width="618" height="741" key="find.popup" timestamp="1588793248213">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="0" y="23" width="869" height="977" key="find.popup" timestamp="1589132852129">
+      <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="0" y="23" width="869" height="977" key="find.popup/0.23.1920.977@0.23.1920.977" timestamp="1589132852129" />
     <state x="0" y="27" width="618" height="741" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1588793248213" />
     <state x="315" y="185" width="735" height="423" key="git4idea.merge.GitPullDialog" timestamp="1588757156386">
       <screen x="0" y="27" width="1366" height="741" />
@@ -538,88 +302,20 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tests/GetStartedTest.java</url>
-          <line>10</line>
-          <properties />
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/ArticleTests.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="13" />
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.14.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/WelcomePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/GetStartedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/MyListsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/junit-4.12.jar!/org/junit/internal/runners/JUnit38ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/android/AndroidArticlePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/Platform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ArticleTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

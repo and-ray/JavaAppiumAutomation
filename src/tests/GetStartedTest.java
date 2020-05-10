@@ -3,6 +3,7 @@ package tests;
 import lib.CoreTestCase;
 import lib.Platform;
 import lib.ui.WelcomePageObject;
+import lib.ui.factories.WelcomePageObjectFactory;
 import org.junit.Test;
 
 public class GetStartedTest extends CoreTestCase {
@@ -12,7 +13,7 @@ public class GetStartedTest extends CoreTestCase {
         if (Platform.getInstance().isAndroid()) {
             return;
         }
-        WelcomePageObject welcomePage = new WelcomePageObject(driver);
+        WelcomePageObject welcomePage = WelcomePageObjectFactory.get(driver);
 
         welcomePage.waitForLearnMoreLink();
         welcomePage.clickNextButton();
@@ -20,7 +21,7 @@ public class GetStartedTest extends CoreTestCase {
         welcomePage.waitForNewWaysToExploreText();
         welcomePage.clickNextButton();
 
-        welcomePage.waitForAddOrEditPrefferedLangText();
+        welcomePage.waitForAddOrEditPreferredLangText();
         welcomePage.clickNextButton();
 
         welcomePage.waitForLearnMoreAboutDataCollectedText();
