@@ -70,7 +70,7 @@ abstract public class MyListPageObject extends MainPageObject {
     }
 
     public void addArticleToExistingReadingList(String name_of_reading_list) {
-        openBookmarks();
+        //openBookmarks();
         openFolderByName(name_of_reading_list);
     }
 

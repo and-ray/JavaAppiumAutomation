@@ -16,5 +16,6 @@ public class AndroidArticlePageObject extends ArticlePageObject {
         MY_LIST_NAME_INPUT = "id:org.wikipedia:id/text_input";
         MY_LIST_OK_BUTTON = "xpath://*[@text='OK']";
         MY_ARTICLE_TPL = "xpath://*[contains(@text, '{ARTICLE_DATA}')]";
+        OPTIONS_ADD_TO_MY_LIST_BUTTON = "xpath://*[contains(@text, 'Saved')]";
     }
 }

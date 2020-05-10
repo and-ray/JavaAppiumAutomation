@@ -72,8 +72,8 @@ public class MyListsTest extends CoreTestCase {
 
         if (Platform.getInstance().isAndroid()) {
             myListPageObject.openBookmarks();
-            articlePageObject.addArticleToNewList(name_of_reading_list);
-            //navigationUI.openMyLists();
+            myListPageObject.addArticleToExistingReadingList(name_of_reading_list);
+            navigationUI.openMyLists();
             myListPageObject.openFolderByName(name_of_reading_list);
             //check both exist
             articlePageObject.waitForArticleByTitlePresent("JavaScript");

@@ -78,6 +78,13 @@ abstract public class ArticlePageObject extends MainPageObject {
                 );
     }
 
+    public void addArticleToExistingList(String name_of_reading_list){
+        waitForElementAndClick(OPTIONS_ADD_TO_MY_LIST_BUTTON,
+                "Cannot find option to add article to reading list",
+                5
+                );
+    }
+
     public void closeArticle(){
         waitForElementAndClick(CLOSE_ARTICLE_BUTTON,
                 "Cannot find button to close article",
