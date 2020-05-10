@@ -14,7 +14,7 @@ public class IOSArticlePageObject extends ArticlePageObject {
         FOOTER_ELEMENT = "id:View article in browser";
         CLOSE_ARTICLE_BUTTON = "id:Back";
         OPTIONS_ADD_TO_MY_LIST_BUTTON = "id:Save for later";
-        MY_ARTICLE_TPL = "xpath://*[@name'{ARTICLE_DATA}']";
+        MY_ARTICLE_TPL = "xpath://*[contains(@name,'{ARTICLE_DATA}')]";
         /*ADD_TO_MY_LIST_OVERLAY = "xpath://*[@resource-id='org.wikipedia:id/onboarding_button'][@text='GOT IT']";
         BUTTON_TO_CREATE_NEW_LIST = "xpath://*[contains(@text, 'Create new')]";
         MY_LIST_NAME_INPUT = "id:org.wikipedia:id/text_input";
