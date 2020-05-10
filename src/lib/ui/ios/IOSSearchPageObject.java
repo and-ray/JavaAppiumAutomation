@@ -10,7 +10,7 @@ public class IOSSearchPageObject extends SearchPageObject {
         SEARCH_INPUT = "xpath://*[@name='Search Wikipedia']";
         SEARCH_CANCEL_BUTTON = "id:Cancel";
         SEARCH_RESULT_BY_SUBSTRING_TPL =
-                "xpath://*[contains(@name,'{SUBSTRING}')]";//todo
+                "xpath://*[contains(@name,'{SUBSTRING}')]";
         SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_TPL =
                 "xpath://android.view.ViewGroup[./android.widget.TextView[@resource-id='org.wikipedia:id/page_list_item_title' and @text='{TITLE}']]" +
                         "[./android.widget.TextView[@resource-id='org.wikipedia:id/page_list_item_description' and @text='{DESCRIPTION}']]";
