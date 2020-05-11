@@ -32,18 +32,15 @@ public class MyListsTest extends CoreTestCase {
         if (Platform.getInstance().isAndroid()) {
             myListPageObject.openBookmarks();
             articlePageObject.addArticleToNewList(name_of_reading_list);
+            navigationUI.openMyLists();
+            myListPageObject.openFolderByName(name_of_reading_list);
+            myListPageObject.waitForArticleToAppearByTitle(name_of_reading_list);
         } else {
             articlePageObject.addArticlesToMySaved();
             articlePageObject.closeArticle();
             searchPageObject.clickCancelSearch();
             myListPageObject.openSavedArticles();
             myListPageObject.closeOverlay();
-        }
-
-        if (Platform.getInstance().isAndroid()) {
-            navigationUI.openMyLists();
-            myListPageObject.openFolderByName(name_of_reading_list);
-            myListPageObject.waitForArticleToAppearByTitle(name_of_reading_list);
         }
         myListPageObject.swipeByArticleToDelete(articleTitle);
     }
