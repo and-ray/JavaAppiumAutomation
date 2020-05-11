@@ -47,7 +47,6 @@ public class MyListsTest extends CoreTestCase {
 
     @Test
     public void testSaveTwoArticlesDeleteOneCheckOtherTitle() {
-        //open and save first
         SearchPageObject searchPageObject = SearchPageObjectFactory.get(driver);
         searchPageObject.initSearchInput();
         searchPageObject.typeSearchLine("Java");
@@ -72,7 +71,7 @@ public class MyListsTest extends CoreTestCase {
             myListPageObject.addArticleToExistingReadingList(name_of_reading_list);
             navigationUI.openMyLists();
             myListPageObject.openFolderByName(name_of_reading_list);
-            //check both exist
+
             articlePageObject.waitForArticleByTitlePresent("JavaScript");
             articlePageObject.waitForArticleByTitlePresent("Java (programming language)");
         } else {

@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="789c1e6b-adb3-47a8-aa0a-d036e7883f8d" name="Default Changelist" comment="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS">
+    <list default="true" id="789c1e6b-adb3-47a8-aa0a-d036e7883f8d" name="Default Changelist" comment="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS and android checked">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ios/IOSArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/MyListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyListsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,11 +36,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MyListsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyListsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/MyListsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="332">
+              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangeAppConditionTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -61,6 +72,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>//</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -69,6 +85,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/lib/ui/MyListPageObject.java" />
         <option value="$PROJECT_DIR$/src/tests/MyListsTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" />
       </list>
     </option>
   </component>
@@ -176,33 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyListsTest">
-    <configuration name="ArticleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs>
-        <env name="PLATFORM" value="android" />
-      </envs>
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ChangeAppConditionTests.testCheckSearchArticleInBackground">
     <configuration name="ChangeAppConditionTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <extension name="coverage">
@@ -217,6 +208,32 @@
       <option name="MAIN_CLASS_NAME" value="tests.ChangeAppConditionTests" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs>
+        <env name="PLATFORM" value="android" />
+      </envs>
+      <patterns />
+    </configuration>
+    <configuration name="ChangeAppConditionTests.testCheckSearchArticleInBackground" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ChangeAppConditionTests" />
+      <option name="METHOD_NAME" value="testCheckSearchArticleInBackground" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" />
@@ -330,19 +347,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArticleTests" />
       <item itemvalue="JUnit.ChangeAppConditionTests" />
       <item itemvalue="JUnit.GetStartedTest" />
       <item itemvalue="JUnit.MyListsTest" />
       <item itemvalue="JUnit.MyListsTest.testSaveFirstArticleToMyList" />
+      <item itemvalue="JUnit.ChangeAppConditionTests.testCheckSearchArticleInBackground" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChangeAppConditionTests.testCheckSearchArticleInBackground" />
         <item itemvalue="JUnit.MyListsTest" />
         <item itemvalue="JUnit.MyListsTest.testSaveFirstArticleToMyList" />
         <item itemvalue="JUnit.GetStartedTest" />
         <item itemvalue="JUnit.ChangeAppConditionTests" />
-        <item itemvalue="JUnit.ArticleTests" />
       </list>
     </recent_temporary>
   </component>
@@ -413,13 +430,17 @@
       <option name="project" value="LOCAL" />
       <updated>1589141433561</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS and android checked">
+      <created>1589229486302</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589229486303</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SearchTests - 2020.05.11 at 23h 05m 50s.xml">
-      <configuration name="SearchTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SearchTests - 2020.05.11 at 23h 06m 24s.xml">
       <configuration name="SearchTests" configurationId="JUnit" />
     </history-entry>
@@ -447,6 +468,9 @@
     <history-entry file="MyListsTest_testSaveFirstArticleToMyList - 2020.05.11 at 23h 35m 04s.xml">
       <configuration name="MyListsTest.testSaveFirstArticleToMyList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MyListsTest - 2020.05.11 at 23h 37m 29s.xml">
+      <configuration name="MyListsTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="13" y="40" width="1897" height="1303" extended-state="0" />
@@ -466,6 +490,7 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34060672" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
@@ -477,7 +502,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -508,7 +532,8 @@
     <MESSAGE value="Platform capabilities added, all selectors changed" />
     <MESSAGE value="article tests for iOS R ready." />
     <MESSAGE value="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS" />
+    <MESSAGE value="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS and android checked" />
+    <option name="LAST_COMMIT_MESSAGE" value="testSaveTwoArticlesDeleteOneCheckOtherTitle for IOS and android checked" />
   </component>
   <component name="WindowStateProjectService">
     <state x="266" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589225895494">
@@ -898,13 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/SearchTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -928,8 +946,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/MyListsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="332">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
         </state>
       </provider>
     </entry>
