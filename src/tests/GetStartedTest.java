@@ -8,6 +8,13 @@ import org.junit.Test;
 
 public class GetStartedTest extends CoreTestCase {
 
+    @Override
+    protected void setUp() throws Exception {
+        super.setUp();
+        driver = Platform.getInstance().getDriver();
+        rotateScreenPortrait();
+    }
+
     @Test
     public void testPassThroughWelcome() {
         if (Platform.getInstance().isAndroid()) {

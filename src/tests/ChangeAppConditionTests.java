@@ -2,6 +2,7 @@ package tests;
 
 import io.appium.java_client.TouchAction;
 import lib.CoreTestCase;
+import lib.Platform;
 import lib.ui.ArticlePageObject;
 import lib.ui.MyListPageObject;
 import lib.ui.NavigationUI;
@@ -57,7 +58,11 @@ public class ChangeAppConditionTests extends CoreTestCase {
         sleep(2000);
         backgroundApp(2);
         NavigationUI navigationUI = NavigationUIFactory.get(driver);
-        navigationUI.moveBack();
+        if (Platform.getInstance().isAndroid()){
+        navigationUI.moveBack();}
+        else {
+            ArticlePageObject articlePageObject = ArticlePageObjectFactory.get(driver);
+            articlePageObject.closeArticle();}
         MyListPageObject myListPageObject = MyListPageObjectFactory.get(driver);
         sleep(1000);
         TouchAction action = new TouchAction(driver);

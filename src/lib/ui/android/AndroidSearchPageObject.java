@@ -12,7 +12,7 @@ public class AndroidSearchPageObject extends SearchPageObject {
                 SEARCH_RESULT_BY_TITLE_AND_DESCRIPTION_TPL =
                         "xpath://android.view.ViewGroup[./android.widget.TextView[@resource-id='org.wikipedia:id/page_list_item_title' and @text='{TITLE}']]" +
                          "[./android.widget.TextView[@resource-id='org.wikipedia:id/page_list_item_description' and @text='{DESCRIPTION}']]";
-                SEARCH_RESULT_ELEMENT_WITH_TITLE =
+                SEARCH_RESULT_ELEMENT =
                         "xpath://*[@resource-id='org.wikipedia:id/search_results_list']/*/*[@resource-id='org.wikipedia:id/page_list_item_title']";
                 SEARCH_EMPTY_RESULT_ELEMENT = "xpath://*[@text='No results found']";
     }
